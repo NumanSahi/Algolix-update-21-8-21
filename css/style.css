@@ -165,7 +165,7 @@ Main Components
 .container-testim{
 display: flex;
 justify-content: space-evenly;
-margin-left: 180px;
+/*margin-left: 180px;*/
 
 
     /* margin-top: 50px; */
@@ -176,14 +176,14 @@ margin-left: 180px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-left: 180px;
+    /*margin-left: 180px;*/
    
 }
 .container-testim3{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-   margin-left: 180px;
+   /*margin-left: 180px;*/
 }
 
 
