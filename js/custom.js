@@ -329,4 +329,5 @@ $('.owl-carousel').owlCarousel({
     autoplay:true,
     margin:10,
     items:4,
-})
+    
+});

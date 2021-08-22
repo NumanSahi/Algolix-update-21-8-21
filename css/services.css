@@ -106,9 +106,9 @@
 
 
 .blog .carousel-indicators {
-    left: 73px;
+    left: center;
     top: auto;
-    bottom: -100px;
+    bottom: -120px;
 
 }
 
