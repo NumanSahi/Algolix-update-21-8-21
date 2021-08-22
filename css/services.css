@@ -1,0 +1,145 @@
+.service-main {
+    width: 100%;
+    height: 100vh;
+    padding: 35px 0 0;
+}
+#learn-more {
+    fill-opacity: 0;
+    fill: #fff;
+    stroke: #fff;
+    stroke-width: 2;
+    border-radius: 5px;
+    stroke-linejoin: round;
+    transition: all 250ms ease-in;
+    cursor: pointer;
+}
+#learn-more:hover {
+    fill-opacity: 1;
+}
+#learn-more:hover ~ .learn-more-text {
+    fill: #005fa4;
+}
+.learn-more-text {
+    font-family: 'Roboto';
+    fill: #fff;
+    pointer-events: none;
+    font-size: 14px;
+    transition: all 250ms ease-in;
+}
+/*.center {
+    fill: #005fa4;
+}*/
+.pointer {
+    fill:none;
+    stroke: #fff;
+    stroke-width: 3;
+}
+.nav-copy {
+    font-family: 'Roboto';
+    fill: #fff;
+    fill-opacity: 1;
+    transition: all 250ms ease-in;
+}
+.nav-copy.changing {
+    fill-opacity: 0;
+}
+.service {
+    cursor: pointer;
+}
+.service text {
+    font-size: 11px;
+    text-anchor: middle;
+}
+.service .icon-wrapper {
+    transform-origin: 50% 50%;
+}
+.service .icon-wrapper, .service .icon-wrapper > * {
+    transition: all 250ms ease-in;
+}
+.service circle {
+    fill: #0e1119;
+}
+.service circle.shadow {
+    fill-opacity: 0;
+    filter: url(#service-shadow);
+}
+.serv-3 {
+    visibility: hidden;
+}
+.service use {
+    fill: #fff;
+}
+.service text {
+    fill: #fff;
+}
+.service.active .icon-wrapper, .service:hover .icon-wrapper {
+    transform: scale(1.15) translateY(-5px);
+}
+.service.active .icon-wrapper, .service:hover .icon-wrapper, .service.active .icon-wrapper > *, .service:hover .icon-wrapper > * {
+    transition: all 250ms ease-out;
+}
+.service.active .icon-wrapper circle.shadow, .service:hover .icon-wrapper circle.shadow {
+    fill-opacity: 0.4;
+}
+.service.active text, .service:hover text {
+    fill: #fff;
+    font-weight: 500;
+}
+#color1 {
+    stop-color: #f28705;
+}
+#color2 {
+    stop-color: #e54818;
+}
+.service-title {
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 500;
+}
+.service-sub-title {
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+.blog .carousel-indicators {
+    left: 73px;
+    top: auto;
+    bottom: -100px;
+
+}
+
+/* The colour of the indicators */
+.blog .carousel-indicators li {
+    background: rgb(242,135,5);
+    border-radius: 50%;
+    width: 18px;
+    height: 1px;
+}
+
+.blog .carousel-indicators .active {
+    background: rgb(242,135,5);
+    background: -moz-linear-gradient(left,  rgba(242,135,5,1) 0%, rgba(229,72,24,1) 82%);
+    background: -webkit-linear-gradient(left,  rgba(242,135,5,1) 0%,rgba(229,72,24,1) 82%);
+    background: linear-gradient(to right,  rgba(242,135,5,1) 0%,rgba(229,72,24,1) 82%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f28705', endColorstr='#e54818',GradientType=1 );
+}
+#blogCarousel {
+    width: 100%;
+    
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
