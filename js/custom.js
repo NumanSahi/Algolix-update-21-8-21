@@ -325,7 +325,8 @@ setTimeout(function () {
 
 $('.owl-carousel').owlCarousel({
     loop:true,
+    // autoWidth:true,
     autoplay:true,
     margin:10,
-    items:3,
+    items:4,
 })
