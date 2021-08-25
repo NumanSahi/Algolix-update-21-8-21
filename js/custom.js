@@ -148,6 +148,10 @@ function createSVGElement(el) {
     return document.createElementNS("service", el);
 }
 
+
+
+
+// ========================================================================
 //Quick setup for multiple attributes
 function setAttributes(el, options) {
     Object.keys(options).forEach(function (attr) {
@@ -155,71 +159,77 @@ function setAttributes(el, options) {
     });
 }
 
-//Service bubbles are created dynamically
+//Service bubbles are created dynamically(expertise section)
 function addService(serv, index) {
     var group = createSVGElement("g");
     group.setAttribute("class", "service serv-" + index);
+    // =================================================================
+
+
+
+
+
 
     /* This group is needed to apply animations in
       the icon and its background at the same time */
-    var icon_group = createSVGElement("g");
-    icon_group.setAttribute("class", "icon-wrapper");
+    // var icon_group = createSVGElement("g");
+    // icon_group.setAttribute("class", "icon-wrapper");
 
-    var circle = createSVGElement("circle");
-    setAttributes(circle, {
-        r: circle_radius,
-        cx: center.x,
-        cy: center.y
-    });
-    var circle_shadow = circle.cloneNode();
-    setAttributes(circle, {
-        class: 'shadow'
-    });
-    icon_group.appendChild(circle_shadow);
-    icon_group.appendChild(circle);
+    // var circle = createSVGElement("circle");
+    // setAttributes(circle, {
+    //     r: circle_radius,
+    //     cx: center.x,
+    //     cy: center.y
+    // });
+    // var circle_shadow = circle.cloneNode();
+    // setAttributes(circle, {
+    //     class: 'shadow'
+    // });
+    // icon_group.appendChild(circle_shadow);
+    // icon_group.appendChild(circle);
 
-    var symbol = createSVGElement("use");
-    setAttributes(symbol, {
-        'x': center.x - icon_size / 2,
-        'y': center.y - icon_size / 2,
-        'width': icon_size,
-        'height': icon_size
-    });
-    symbol.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#" + serv.icon);
-    icon_group.appendChild(symbol);
+    // var symbol = createSVGElement("use");
+    // setAttributes(symbol, {
+    //     'x': center.x - icon_size / 2,
+    //     'y': center.y - icon_size / 2,
+    //     'width': icon_size,
+    //     'height': icon_size
+    // });
+    // symbol.setAttributeNS("http://www.w3.org/1999/xlink", "xlink:href", "#" + serv.icon);
+    // icon_group.appendChild(symbol);
 
-    group.appendChild(icon_group);
+    // group.appendChild(icon_group);
 
-    var text = createSVGElement("text");
-    setAttributes(text, {
-        x: center.x,
-        y: center.y + circle_radius + text_top_margin
-    });
+    // var text = createSVGElement("text");
+    // setAttributes(text, {
+    //     x: center.x,
+    //     y: center.y + circle_radius + text_top_margin
+    // });
 
-    var tspan = createSVGElement("tspan");
-    if (serv.name.indexOf('\n') >= 0) {
+    // var tspan = createSVGElement("tspan");
+    // if (serv.name.indexOf('\n') >= 0) {
 
-        var tspan2 = tspan.cloneNode();
-        var name = serv.name.split('\n');
-        jQuery(tspan).text(name[0]);
-        jQuery(tspan2).text(name[1]);
+    //     var tspan2 = tspan.cloneNode();
+    //     var name = serv.name.split('\n');
+    //     jQuery(tspan).text(name[0]);
+    //     jQuery(tspan2).text(name[1]);
 
-        setAttributes(tspan2, {
-            x: center.x,
-            dy: tspan_delta
-        });
+    //     setAttributes(tspan2, {
+    //         x: center.x,
+    //         dy: tspan_delta
+    //     });
 
-        text.appendChild(tspan);
-        text.appendChild(tspan2);
-    } else {
-        jQuery(tspan).text(serv.name);
-        text.appendChild(tspan);
-    }
+    //     text.appendChild(tspan);
+    //     text.appendChild(tspan2);
+    // } else {
+    //     jQuery(tspan).text(serv.name);
+    //     text.appendChild(tspan);
+    // }
 
-    group.appendChild(text);
-    services.appendChild(group);
+    // group.appendChild(text);
+    // services.appendChild(group);
 
-    var service_bubble = jQuery(".serv-" + index);
+    // var service_bubble = jQuery(".serv-" + index);
 
     //Uses tween to look for right position
     twn_pivot_path.seek(index);
@@ -328,6 +338,6 @@ $('.owl-carousel').owlCarousel({
     // autoWidth:true,
     autoplay:true,
     margin:10,
-    items:4,
+    items:3,
     
 });
