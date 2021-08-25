@@ -333,11 +333,33 @@ setTimeout(function () {
 // });
 
 
-$('.owl-carousel').owlCarousel({
+$('.owl-one').owlCarousel({
+    loop:true,
+    // autoWidth:true,
+    autoplay:true,
+    margin:10,
+    items:7,
+    
+ 
+    
+});
+$('.owl-two').owlCarousel({
     loop:true,
     // autoWidth:true,
     autoplay:true,
     margin:10,
     items:3,
+    
+ 
+    
+});
+$('.owl-three').owlCarousel({
+    loop:true,
+    // autoWidth:true,
+    autoplay:true,
+    margin:10,
+    items:3,
+    
+ 
     
 });
