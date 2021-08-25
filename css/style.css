@@ -7,6 +7,7 @@ body{
      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131621', endColorstr='#2e3957',GradientType=0 );
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; 
+    overflow-x: hidden;
 } 
 body::before {
     /* never visible - this is used in jQuery to check the current MQ */
@@ -986,10 +987,9 @@ font-size: 16px;
 }
 .footer-main1{
     height: 40%;
-    width: 100vw;
+    /* width: 100vw; */
     display: flex;
-    
-    
+
     justify-content: space-between;
     align-items: center;
 }
