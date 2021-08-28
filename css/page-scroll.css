@@ -36,14 +36,11 @@ Main Components
     }
 }
 
-.cd-section {
-    height: 100vh;
+
+.cd-section: {
+    /* height: 100vh; */
 }
-.cd-section h2 {
-    line-height: 100vh;
-    text-align: center;
-    font-size: 2.4rem;
-}
+
 .cd-section:first-of-type > div {
     background-color: transparent;
 }
@@ -69,25 +66,25 @@ Main Components
 
 }
 .cd-section:nth-of-type(3) > div {
-    height: 100vh;
+     /* height: 100vh;  */
     background: rgb(19,22,33);
     background: -moz-linear-gradient(top,  rgba(19,22,33,1) 0%, rgba(46,57,87,1) 100%);
     background: -webkit-linear-gradient(top,  rgba(19,22,33,1) 0%,rgba(46,57,87,1) 100%);
     background: linear-gradient(to bottom,  rgba(19,22,33,1) 0%,rgba(46,57,87,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131621', endColorstr='#2e3957',GradientType=0 ); 
 }
-/* .cd-section:nth-of-type(4) > div {
-    background-color: #fcb052;
+.cd-section:nth-of-type(4) > div {
+    /* background-color: #fcb052; */
 }
 .cd-section:nth-of-type(5) > div {
-    background-color: #f06a59;
+    /* background-color: #f06a59; */
 }
 [data-animation="parallax"] .cd-section > div, [data-animation="fixed"] .cd-section > div, [data-animation="opacity"] .cd-section > div {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-} */
-/* [data-animation="parallax"] .cd-section:first-of-type > div, [data-animation="fixed"] .cd-section:first-of-type > div, [data-animation="opacity"] .cd-section:first-of-type > div {
+} 
+ [data-animation="parallax"] .cd-section:first-of-type > div, [data-animation="fixed"] .cd-section:first-of-type > div, [data-animation="opacity"] .cd-section:first-of-type > div {
     background-image: url("../img/index-top-img.jpg");
 }
 [data-animation="parallax"] .cd-section:nth-of-type(2) > div, [data-animation="fixed"] .cd-section:nth-of-type(2) > div, [data-animation="opacity"] .cd-section:nth-of-type(2) > div {
@@ -101,11 +98,11 @@ Main Components
 }
 [data-animation="parallax"] .cd-section:nth-of-type(5) > div, [data-animation="fixed"] .cd-section:nth-of-type(5) > div, [data-animation="opacity"] .cd-section:nth-of-type(5) > div {
     background-image: url("../img/img-5.jpg");
-} */
-/* @media only screen and (min-width: 1050px) {
+} 
+ @media only screen and (min-width: 1050px) {
     .cd-section h2 {
-        font-size: 4rem;
-        font-weight: 300;
+        font-size: 2rem;
+        font-weight: 500;
     }
     [data-hijacking="on"] .cd-section {
         opacity: 0;
@@ -121,9 +118,9 @@ Main Components
     [data-hijacking="off"] .cd-section > div {
         opacity: 0;
     }
-    [data-animation="rotate"] .cd-section { */
+    [data-animation="rotate"] .cd-section { 
         /* enable a 3D-space for children elements */
-        /* -webkit-perspective: 1800px;
+         -webkit-perspective: 1800px;
         -moz-perspective: 1800px;
         perspective: 1800px;
     }
@@ -160,7 +157,7 @@ Main Components
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
     }*/
-    /* [data-hijacking="on"] .cd-section > div {
+    [data-hijacking="on"] .cd-section > div {
         position: absolute;
     }
     [data-animation="rotate"] .cd-section > div {
@@ -170,7 +167,7 @@ Main Components
         -o-transform-origin: center bottom;
         transform-origin: center bottom;
     }
-} */
+} 
 
  .cd-vertical-nav {
     position: fixed;
@@ -204,7 +201,7 @@ Main Components
     background: url(../img/cd-icon-arrow.svg) no-repeat center center;
     color: red;
 /* }============================================================================= */
-/* .cd-vertical-nav a.cd-prev {
+ .cd-vertical-nav a.cd-prev {
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -219,7 +216,7 @@ Main Components
     -webkit-transition: opacity 0.2s 0s, visibility 0s 0.2s;
     -moz-transition: opacity 0.2s 0s, visibility 0s 0.2s;
     transition: opacity 0.2s 0s, visibility 0s 0.2s;
-} */
+} 
 .cd-next {
     color: #ff7300;
     font-size: 38px;
