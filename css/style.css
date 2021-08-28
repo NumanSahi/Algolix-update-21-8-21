@@ -120,9 +120,9 @@ Main Components
     
 
 #ourportfoloio-sectionmain{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    /* display: flex;
+    justify-content:center; */
+    
 }
 
 
@@ -593,13 +593,28 @@ font-size: 16px;
     margin-top: 80px;
     
 }
+.whychose-section{
+
+    display: flex;
+    flex-direction: column;
+}
+/* @media (min-width: 300px){
+    .whychose-section{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+} */
+
+
 .choosebar-main{
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
     
 }
-@media (min-width: 300px){
+ @media (min-width: 300px){
     .choosebar-main,.choosebar-second,.valuepage-main,.valuepage-main2{
         max-width: 100%;
         align-items: center;
@@ -607,7 +622,7 @@ font-size: 16px;
         flex-direction: row;
         flex-wrap: wrap;
         
-    }
+    } 
 
 
 
