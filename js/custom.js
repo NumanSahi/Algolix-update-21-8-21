@@ -295,6 +295,10 @@ function serviceClick(ev) {
     }, 250);
 }
 
+$(function() {
+    $(".service").on('click', serviceClick);
+})
+
 //Array describes points for a whole circle in order to get
 //the right curve
 var half_circle = [{ x: -serv_dist, y: 0 }, { x: 0, y: serv_dist }, { x: serv_dist, y: 0 }, { x: 0, y: -serv_dist }, { x: -serv_dist, y: 0 }];
@@ -353,12 +357,41 @@ $('.owl-two').owlCarousel({
  
     
 });
+
 $('.owl-three').owlCarousel({
     loop:true,
-    // autoWidth:true,
-    autoplay:true,
     margin:10,
-    items:3,
+    items: 1,
+    // responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:2,
+        },
+        1000:{
+            items:3,
+        }
+    }
+})
+
+$('.owl-three2').owlCarousel({
+    loop:true,
+    // autoWidth:true,
+    // autoplay:true,
+    // margin:10,
+    // items: 1,
+
+    items : 1, // THIS IS IMPORTANT
+
+    responsive : {
+        0 : { items : 1  }, // from zero to 480 screen width 4 items
+        480 : { items : 1  }, // from 480 screen widthto 768 6 items
+        768 : { items : 3   // from 768 screen width to 1024 8 items
+        }
+    },
+
     
  
     

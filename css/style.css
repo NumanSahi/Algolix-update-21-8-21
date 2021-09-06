@@ -9,17 +9,25 @@ body{
     -moz-osx-font-smoothing: grayscale; 
     overflow-x: hidden;
 } 
+@media screen and (max-width:700px) {
+    body{
+        background: rgba(19,22,33,1);
+        font-family: "Graphik";
+    }
+    
+}
+
 body::before {
     /* never visible - this is used in jQuery to check the current MQ */
     content: 'mobile';
     display: none;
 }
-@media only screen and (min-width: 1050px) {
-    body::before {
+ @media only screen and (min-width: 1050px) {
+    body::before { 
         /* never visible - this is used in jQuery to check the current MQ */
-        content: 'desktop';
+         content: 'desktop';
     }
-}
+} 
 
 /* a {
     color: #267481;
@@ -66,10 +74,27 @@ Main Components
     flex-direction: column;
     height: 30vh;
 }
+@media screen and (max-width:700px) {
+    .bbbexp{
+        display: flex;
+        flex-direction: column;
+        height: 35vh;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+    }
+    
+}
 
 .expert-mainhd{
     display: flex;
     justify-content: center;
+}
+@media screen and (max-width:700px) {
+    .expert-mainhd{
+        font-size: 0.5rem;
+    }
+    
 }
 .expert-mainhd h3{
     color: #fff;
@@ -77,13 +102,16 @@ Main Components
 
 .para-expertmain{
     display: flex;
+    justify-content: center; 
     
+}
+.para-2expertise{
+    display: flex;
     justify-content: center;
-    
 }
 .para-expertmain p{
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
 }
 .owl-theme .owl-dots .owl-dot span {
     width: 18px;
@@ -120,8 +148,8 @@ Main Components
     
 
 #ourportfoloio-sectionmain{
-    /* display: flex;
-    justify-content:center; */
+     display: flex;
+     justify-content:center;
     
 }
 
@@ -354,6 +382,13 @@ padding-bottom: 10px;
 .slidebarmain{
     display: flex;
 }
+@media screen and (max-width:700px) {
+    .slidebarmain{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
 
 .valueheading-1st{
     
@@ -371,7 +406,43 @@ writing-mode: vertical-rl;
 
 
 }
-
+@media only screen and (max-width: 700px) {
+    .valueheading-1st{
+        display: flex;
+        justify-content: center;
+        writing-mode: horizontal-tb;
+        transform: none;
+        white-space: normal;
+        width: 100%;
+        height: 50px;
+        align-items: center;
+        
+        
+        
+    }
+}
+@media screen and (max-width:700px) {
+    .valuepage-main,.valuepage-main2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+        flex-wrap: wrap;
+    }
+}
+.maincontainer-1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+@media screen and (max-width:700px) {
+    .maincontainer-1{
+        display: flex;
+        margin-right: 50px;
+        
+    }
+    
+}
 .valueheading-1st h1{
     font-size: 5.5rem;
     font-weight: bolder;
@@ -381,11 +452,30 @@ writing-mode: vertical-rl;
   
   
 }
-
+@media screen and (max-width:700px) {
+    .valueheading-1st h1{
+        font-size: 1.9rem;
+        padding-top: 10px;
+    }
+    
+}
 .valuepara-main{
     display: flex;
     justify-content: center; 
     margin-top: 120px;    
+}
+@media screen and (max-width:700px) {
+    .valuepara-main{
+        margin-top: 10px;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .para-choose{
+        padding-top: 15px;
+        
+    }
+    
 }
 .valuepara-main p{
 color:#fff;
@@ -399,14 +489,23 @@ font-size: 16px;
     justify-content: space-between;
     margin-top: 40px;  
     line-height: 18px;
-    margin-left: 50px;
+    /* margin-left: 50px; */
 }
 .valuepage-main2{
     display: flex;
     justify-content: space-between;
     
     margin-top: 30px;
-   margin-left: 50px;
+   /* margin-left: 50px; */
+}
+@media screen and (max-width:700px) {
+    .valuepage-main,.valuepage-main2{
+        display: flex;
+        justify-content: center;
+        
+    
+    }
+    
 }
 .container-value{
     background-color: rgb(14,17,26);
@@ -416,7 +515,8 @@ font-size: 16px;
     width: 260px;
     height: 250px;
     padding-top: 5px;
-    margin-left: 70px;
+    margin-left: 30px;
+    
     
 }
 .heading-valuemain{
@@ -448,7 +548,7 @@ font-size: 16px;
     width: 260px;
     height: 250px;
     padding-top: 5px;
-    margin-left: 70px;
+    margin-left: 30px;
 }
 .heading2-valuemain{
     font-weight: 600;
@@ -476,7 +576,7 @@ font-size: 16px;
     width: 260px;
     height: 250px;
     padding-top: 5px;
-    margin-left: 70px;
+    margin-left: 30px;
 }
 .heading3-valuemain{
     font-weight: 600;
@@ -504,7 +604,7 @@ font-size: 16px;
     width: 260px;
     height: 250px;
     padding-top: 5px;
-    margin-left: 70px;
+    margin-left: 30px;
 }
 .heading4-valuemain{
     font-weight: 600;
@@ -533,7 +633,7 @@ font-size: 16px;
     width: 260px;
     height: 250px;
     padding-top: 5px;
-    margin-left: 70px;
+    margin-left: 30px;
 }
 .heading5-valuemain{
     font-weight: 600;
@@ -560,7 +660,7 @@ font-size: 16px;
     width: 260px;
     height: 250px;
     padding-top: 5px;
-    margin-left: 70px;
+    margin-left: 30px;
 }
 .heading6-valuemain{
     font-weight: 600;
@@ -583,7 +683,7 @@ font-size: 16px;
 /* ============================================================================================ */ 
 /* why choose option */
 .heading-chosebar{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     background: linear-gradient(to right,  rgba(242,135,5,1) 0%,rgba(229,72,24,1) 82%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -593,36 +693,50 @@ font-size: 16px;
     margin-top: 80px;
     
 }
-.whychose-section{
+@media screen and (max-width:700px) {
+    .heading-chosebar{
+        font-size: 1.5rem;
+    }
+    
+}
+/* .whychose-section{
 
     display: flex;
-    flex-direction: column;
-}
-/* @media (min-width: 300px){
+    /* flex-direction: column; */
+
+/* } */
+ /* @media (min-width: 300px){
     .whychose-section{
         display: flex;
         flex-direction: row;
         max-width: 100%;
         flex-wrap: wrap;
     }
-} */
+}  */ 
 
 
-.choosebar-main{
+ .choosebar-main{
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
     
-}
- @media (min-width: 300px){
-    .choosebar-main,.choosebar-second,.valuepage-main,.valuepage-main2{
+ }
+ @media screen and (max-width: 700px){
+    .choosebar-main,.choosebar-second{
         max-width: 100%;
-        align-items: center;
+        
+        
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        margin-top: 40px;
+    justify-content: space-evenly;
+        align-items: center;
+    
+        
         
     } 
+}
 
 
 
@@ -637,6 +751,12 @@ width: 265px;
 height: 225px;
 padding-top: 10px;
 
+}
+@media screen and (max-width:700px) {
+    .choose-2,.choose-3{
+        padding-top: 15px;
+    }
+    
 }
 
 .img1{
@@ -740,6 +860,12 @@ padding-top: 10px;
     
  
 }
+@media screen and (max-width:700px) {
+    .heading-processmain{
+        font-size: 1.5rem;
+    }
+    
+}
 
 .processbar-text{
     display: flex;
@@ -790,6 +916,19 @@ color: #fff; */
 .line-1{
     padding: 25px 0px 0px 73px;
 }
+@media screen and (max-width:700px) {
+    .line-1,.line-2,.line-3,.line-4,.line-5{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    #processbar-1,#processbar-3{
+        display: none;
+    }
+    
+}
+
 .para1-1{
     
     color:  #f9f9f9;
@@ -850,12 +989,28 @@ padding-top: 20px;
     margin-top: 50px;
     margin-right: 110px;
 }
+@media screen and (max-width:700px) {
+    .processbar-2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+}
 .agileimage{
     display: flex;
     
 margin-top: 15px;
     
     
+    
+}
+@media screen and (max-width:700px) {
+    .agileimage{
+        margin-left: 110px;
+        margin-bottom: 50px;
+    }
     
 }
 
@@ -1009,6 +1164,14 @@ font-size: 16px;
     justify-content: space-between;
     align-items: center;
 }
+@media screen and (max-width:700px) {
+    .footer-main1{
+
+        flex-wrap: wrap;
+        
+    }
+    
+}
 .footer-main1image{
     padding-left: 45px;
     display: flex;
@@ -1032,9 +1195,20 @@ font-size: 16px;
     color: #ffffff;
    
 }
+@media screen and (max-width:700px) {
+    .footer-about{
+        border: none;
+    }
+    
+}
 .footer-mainbtn{
     margin-right: 50px;
     
+}
+@media screen and (max-width:700px) {
+    .footer-mainbtn{
+        margin-left: 90px;
+    }
 }
 
 .btn1{
@@ -1079,6 +1253,15 @@ font-size: 16px;
 
 
 }
+@media screen and (max-width:700px){
+    .footer-main2{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 260px;
+    }
+}
 .footer-second1 h2{
     background: linear-gradient(to right,  rgba(242,135,5,1) 0%,rgba(229,72,24,1) 80%);
     -webkit-text-fill-color: transparent;
@@ -1088,6 +1271,12 @@ font-size: 16px;
     padding-top: 12px;
 
 
+}
+@media screen and (max-width:700px) {
+    .footer-second1{
+        padding-right:26px;
+    }
+    
 }
 
 .footer-second1stlist{
@@ -1119,7 +1308,14 @@ font-size: 16px;
      border-left: 5px solid rgba(46,57,87,1); 
     height: 200px;
     padding-left: 31px;
-    margin-left:74px;
+    margin-left:3px;
+    
+}
+@media screen and (max-width:700px) {
+    .footer-secondbrws{
+        border: none;
+        margin-left: 117px;
+    }
     
 }
 /* .line1main{
@@ -1190,6 +1386,13 @@ list-style: none;
 .footer-last{
     margin-right: 40px;
     margin-bottom: 20px;
+   
+}
+@media screen and (max-width:700px) {
+    .footer-last{
+    margin-top: 40px;
+    margin-left: 100px;
+}
 }
 
 
@@ -1208,14 +1411,29 @@ list-style: none;
 
 
 }
+@media screen and (max-width:700px) {
+    .lastparagrapgh-footer{
+        margin-right: 50px;
+    }
+    
+}
 
 .input1{
     padding-top: 30px;
 
 }
+@media screen and (max-width:700px) {
+     .input1{
+        padding-top: 10px;
+        padding-right: 60px;
+        
+        
+    }
+    
+}
 .input1 input{
     height: 42px;
-    width: 400px;
+    width: 300px;
     border-radius: 20px;
     padding-left: 50px;
     color: gray;
@@ -1272,6 +1490,16 @@ margin-bottom: 40px;
 margin-right: 157px;
 
 
+}
+@media screen and (max-width:700px) {
+    .media-social-icon{
+        display: flex;
+    justify-content: center;
+    margin-top: 400px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+       
+    }
 }
 .btn-social{
     display: inline-block;

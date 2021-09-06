@@ -7,9 +7,15 @@ body {
 .main-bg {
     background: url("../img/index-top-img.jpg") no-repeat;
     width: 100%;
-    height: 650px;
+    height: 680px;
     background-size: 100% 100%;
-    background-position: top;
+     background-position: top; 
+}
+@media screen and (max-width:700px) {
+    .main-bg{
+        background: url(../img/mediaq.PNG)no-repeat;
+    }
+    
 }
 nav {
     position: relative;
@@ -93,6 +99,20 @@ nav ul li a:hover {
     border-radius: 12px;
     font-size: 20px;
 }
+@media screen and (max-width:700px) {
+    #myBtn{
+        z-index: 100;
+        border: none;
+left: 10px;
+border-radius: 12px;
+width: 40px;
+padding: 10px;
+bottom: 10px;
+font-size: 20px;
+
+    }
+    
+}
 
 #myBtn:hover {
  background: linear-gradient(to right, rgba(242,135,5,1) 0%,rgba(229,72,24,1) 80%);
@@ -112,6 +132,35 @@ nav ul li a:hover {
     width: 30%;
     color: #fff;
 }
+@media screen and (max-width:700px) {
+    .banner-text{
+        /* background: url(../img/mediaq.PNG) no-repeat; */
+        /* left: 20px;
+        top: 10px;
+        z-index: 9;
+        float: left;
+        width: 60%; */
+        /* left: -113px; */
+        top: 8px;
+        z-index: 9;
+        /* float: left; */
+        width: 10%;
+        display: flex;
+        justify-content: flex-start;
+        align-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* align-items: flex-end; */
+
+
+    }
+
+
+
+
+
+    
+}
 .main-title {
     font-weight: bold;
     font-size: 48px;
@@ -120,8 +169,10 @@ nav ul li a:hover {
 
 .main-text {
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 410;
     float: left;
+    color: #fff;
+    padding-top: 20px;
 }
 .see-more-btn {
     background: rgb(242,135,5);
@@ -136,6 +187,15 @@ nav ul li a:hover {
     margin-top: 15px;
 }
 
+@media screen and (max-width:700px) {
+    .see-more-btn{
+        width: 173px;
+        height: 40px;
+        margin-left: 30px;
+        margin-top: 64px;
+    }
+    
+}
 
 
 
