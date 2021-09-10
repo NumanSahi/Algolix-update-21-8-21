@@ -343,56 +343,88 @@ $('.owl-one').owlCarousel({
     autoplay:true,
     margin:10,
     items:7,
+    singleItem:true,
+    
+    // responsiveClass:true,
+    responsive:{
+        0:{
+            items:4,
+        },
+        700:{
+            items:5,
+        },
+        1000:{
+            items:7,
+        }
+    }
+});
     
  
     
-});
+
 $('.owl-two').owlCarousel({
     loop:true,
     // autoWidth:true,
     autoplay:true,
-    margin:10,
+    margin:200,
     items:3,
+    singleItem:true,
     
- 
-    
-});
-
-$('.owl-three').owlCarousel({
-    loop:true,
-    margin:10,
-    items: 1,
     // responsiveClass:true,
     responsive:{
         0:{
             items:1,
         },
-        600:{
-            items:2,
+        700:{
+            items:3,
         },
         1000:{
             items:3,
         }
     }
-})
+});
+    
+ 
+    
 
-$('.owl-three2').owlCarousel({
+
+$('.owl-three').owlCarousel({
     loop:true,
-    // autoWidth:true,
-    // autoplay:true,
-    // margin:10,
-    // items: 1,
-
-    items : 1, // THIS IS IMPORTANT
-
-    responsive : {
-        0 : { items : 1  }, // from zero to 480 screen width 4 items
-        480 : { items : 1  }, // from 480 screen widthto 768 6 items
-        768 : { items : 3   // from 768 screen width to 1024 8 items
+    margin:10,
+    items: 3,
+    autoplay:true,
+    singleItem:true,
+    
+    // responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        700:{
+            items:1,
+        },
+        1000:{
+            items:3,
         }
-    },
+    }
+});
+
+// $('.owl-three2').owlCarousel({
+//     loop:true,
+//     // autoWidth:true,
+//     // autoplay:true,
+//     // margin:10,
+//     // items: 1,
+
+//     items : 1, // THIS IS IMPORTANT
+
+//     responsive : {
+//         0 : { items : 1  }, // from zero to 480 screen width 4 items
+//         480 : { items : 1  }, // from 480 screen widthto 768 6 items
+//         768 : { items : 3   // from 768 screen width to 1024 8 items
+//         }
+//     },
 
     
  
     
-});
